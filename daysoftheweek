@@ -1,6 +1,8 @@
 // Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
-// Recreated Python Code
+// Recreated from Python Codeto javascript code
+// created on 10/13/2024
+
 let t = 1;
 const weekInf = ["monday", "Monday", "Tuesday", "tuesday", "wednesday", "Wednesday", "Thursday", "thursday", "Friday", "friday", "Saturday", "saturday", "sunday", "Sunday"];
 
