@@ -1,0 +1,72 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+//  Code created on 10/13/2024
+// recreated story code from python to javascript
+document.write("Welcome to Calell's Story Game");
+let t= 1;
+let rec00 = "story";
+let rec01 = "story";
+let rec02 = "story";
+
+while (t === 1){
+    n = prompt("Choose the 'left door' or the 'right door':");
+    if (n=="right door" || n=="right" || n=="the right door" || n=="rd" || n=="Right Door" || n=="The Right Door" || n=="the right one" || n=="right one" || n=="r"){
+        document.write("Entered the right door");
+        let rec00 = "After entering the right door";
+       t = 2;
+    }
+    else if (n=="left door" || n=="left" || n=="the left door" || n=="ld" || n=="Left Door" || n=="The Left Door" || n=="the left one" || n=="left one" || n=="l"){
+        document.write("Entered the left door");
+        rec00 = "After entering the left door";
+        t = 2;
+        }
+    else{
+        document.write("Invalid choice retry");
+        rec00 = "";
+        t =1;
+    }
+}
+while (t === 2){
+    n = prompt("Choose to pick up the 'hoe' or the 'sheep':");
+    if (n=="hoe" || n=="pick up a hoe" || n=="pick a hoe" || n=="work the ground" || n=="pick hoe"|| n=="Hoe" || n=="h"){
+        document.write("you picked up a picked up a hoe")
+        rec01 = "you picked up a hoe to work the ground";
+        t = 3;
+    }
+    else if (n=="sheep" || n=="select a sheep" || n=="pick a sheep" || n=="shear the sheep" || n=="Sheep" || n=="s"){
+        document.write("You selected a sheep");
+        rec01 = "you picked up a sheep to shear its pelt";
+        t = 3;
+    }
+    else{
+        print("Invalid choice")
+        rec01 = "";
+        t = 2;
+    }
+    }
+while (t === 3){
+    n = prompt("Sell your hardwork to a neighbor or to family:");
+    if (n=="sell to neighbor" || n=="neighbor" || n=="Neighbor" || n=="sell hardwork to a =neighbor" || n=="give to a neighbor" || n=="n"){
+        document.write("you sold your hardwork to a neighbor");
+        rec02 = "after a days hardwork you sold your triumph to a neighbor and gained double your reward";
+        t = 4;
+    }
+    else if (n=="sell to family" || n=="family" || n=="Sell hardwork to a family" || n=="f" || n=="family member" || n=="fm"){
+        document.write("you sold to family")
+        rec02 = "after a days hardwork you sold your triumph to a family member and gained double your reward";
+        t = 4;
+    }
+    else{
+        print("Invalid choice")
+        rec02 = "";
+        t =3;
+    }
+}
+while (t === 4){
+        document.write("The Story goes")
+        document.write(rec00, rec01,rec02)
+        t = 5;
+}
+while (t=== 5){
+    document.write("");
+}
