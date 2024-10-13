@@ -1,0 +1,28 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Recreated Python Code
+let t = 1;
+const weekInf = ["monday", "Monday", "Tuesday", "tuesday", "wednesday", "Wednesday", "Thursday", "thursday", "Friday", "friday", "Saturday", "saturday", "sunday", "Sunday"];
+
+while (t === 1){
+    let inp = prompt("What day of the week is it? Type next to move on...");
+    if (weekInf.includes(inp)){
+        document.write(inp + " is the day of the week");
+    }
+   else if(inp == "next" || inp == "Next"){
+        document.write("are you sure you want to move on?");
+        inp = prompt("type yes or y to move on to move on");
+        if (inp == "y" || inp == "yes"){
+            document.write("you typed " + inp + " Thank You for your time");
+            t = t + 1;
+        }
+        else {
+            t = t + 0;
+        }
+   }
+    else{
+        Pass
+    }
+      
+   
+        
