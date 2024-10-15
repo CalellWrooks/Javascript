@@ -1,0 +1,70 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// Online Python compiler (interpreter) to run Python online.
+// Write Python 3 code in this online editor and run it.
+
+// Date Started and Completed 10/15/2024
+
+let compWins = 0;
+let userWins = 0;
+t = prompt("How many rounds do you want???");
+
+for (let i = 0; i < t; i++){
+
+// List of strings
+    const gameSetup = ["Rock", "Paper", "Scissors"];
+    
+    let inp = prompt("Write Rock Paper or Scissors.");
+
+    if (gameSetup.includes(inp)){
+    let gameAct = gameSetup[Math.floor(Math.random() * gameSetup.length)];
+// document.write the shuffled list
+    document.write(gameAct);
+    if (gameAct === inp){
+        document.write("Draw")
+		}
+    else if (gameAct == "Rock" && inp == "Paper"){
+        document.write("User wins")
+        userWins = userWins + 1
+		}
+    else if (gameAct == "Rock" && inp == "Scissors"){
+        document.write("Computer wins")
+        compWins = compWins + 1
+		}
+    else if (gameAct == "Paper" && inp == "Rock"){
+        document.write("Computer wins")
+        compWins = compWins + 1
+		}
+    else if (gameAct == "Paper" && inp == "Scissors"){
+        document.write("User wins")
+        compWins = userWins + 1
+		}
+    else if (gameAct == "Scissors" && inp == "Rock"){
+        document.write("User wins")
+        userWins = userWins + 1
+		}
+    else if (gameAct == "Scissors" && inp == "Paper"){
+        document.write("Computer wins")
+        compWins = compWins + 1
+		}
+    else;{
+        // do nothing
+		}
+    }
+}
+if (compWins > userWins){
+    document.write("User loses " + compWins + " out of " + t);
+	}
+else if (compWins < userWins){
+    document.write("User Wins " + userWins + " out of " + t);
+	}
+else if (compWins == userWins){
+    document.write("User has a draw " + userWins + " out of " + t);
+	}
+else;{
+    // do nothing
+	}
