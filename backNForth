@@ -1,0 +1,61 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+// Write Python 3 code in this online editor and run it.
+n = prompt("How many rounds do you want???");  // How long the program runs
+
+let space = " "; // Declare a space  so that the "0" can move around// To express movement, starting at position 1
+let inp = " ";
+var locR  = 1;
+
+function bCode() { 
+      //  Allow modification of 
+	  // global variable locR
+    
+    for (let i = 0; i < n; i++) {  
+	// How long the program runs
+        inp = prompt("Left or Right: ");  // Normalize input to lowercase
+        
+        if (inp == "right" || inp == "r"){  // If the player chooses to move right
+            if (locR < 3){  // Prevent going out of bounds
+                locR = locR + 1;  // Update locR
+                boardUpdateR();  // Update the board
+				}
+            else{
+                document.write("Out of bounds! Can't move right.");
+				}
+			}
+        else if (inp == "left" || inp == "l"){  // If the player chooses to move left
+            if(locR > 1){ // Prevent going out of bounds
+                locR = locR - 1;  // Update locR
+                boardUpdateR();  // Update the board
+			}
+            else{
+                document.write("Out of bounds!;Can't move left.");
+			}
+		}
+        else{
+            document.write("Invalid input. Please choose 'left' or 'right'.");
+		}
+	}
+}
+function boardCreate(){ // Create the basics of the board
+    document.write("-----");  // Top and bottom border of the board
+	}
+
+function boardUpdateR(){  // Update board script
+    boardCreate();  // Draw top of the board
+    if (locR == 1){  // Draw "0" in the first position
+        document.write("-0  -");
+		}
+    else if (locR == 2){  // Draw "0" in the middle
+        document.write("- 0 -");
+		}
+    else if (locR == 3){  // Draw "0" in the last position
+        document.write("-  0-");
+		}
+    boardCreate();  // Draw bottom of the board
+	}
+
+bCode(); // Start the program
