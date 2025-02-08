@@ -1,9 +1,11 @@
 // Online Javascript Editor for free
 // Code for producing a script developing weekly pay calculations
-
+// Online Javascript Editor for free
+// Code for producing a script developing weekly pay calculations
+let pay = " ";
 function calculateWeeklyPay(hoursWorked, hoursPay) {
     // ParseFloat converts the prompt's string input to a floating point number
-    hoursWorked = parseFloat(prompt("Enter the number of hours worked:"));
+    hoursWorked = parseFloat(prompt("Enter the number of hours worked in a week:"));
     hoursPay = parseFloat(prompt("Enter the hourly pay:"));
     
     // Calculate weekly pay
@@ -11,6 +13,26 @@ function calculateWeeklyPay(hoursWorked, hoursPay) {
     
     return weeklyPay;
 }
+function calculateYearlyPay(hoursWorked, yearlyPay) {
+    // ParseFloat converts the prompt's string input to a floating point number
+    hoursWorked = parseFloat(prompt("Enter the number of hours worked in a week:"));
+    yearlyPay = parseFloat(prompt("Enter the yearly pay:"));
+    
+    // Calculate weekly pay
+    let hourlyPay2 = yearlyPay / (hoursWorked * 52);
+    
+    return hourlyPay2;
+}
 
 // Call the function and display the result
-document.write("Weekly pay is $" + calculateWeeklyPay());
+pay = prompt("Do you want to calculate Weekly or yearly pay?:").toLowerCase();
+
+if (pay == "weekly"){
+    document.write("Weekly pay is $" + calculateWeeklyPay());
+}
+if(pay == "yearly"){
+    document.write("Hourly pay is $" + calculateYearlyPay());
+}
+else {
+   //  do nothing
+}
