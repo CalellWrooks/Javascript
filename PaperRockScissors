@@ -1,5 +1,7 @@
 // Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
 // Write, Edit and Run your Javascript code using JS Online Compiler
 // Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
@@ -16,9 +18,10 @@ t = prompt("How many rounds do you want???");
 for (let i = 0; i < t; i++){
 
 // List of strings
-    const gameSetup = ["Rock", "Paper", "Scissors"];
-    
-    let inp = prompt("Write Rock Paper or Scissors.");
+    const gameSetup = ["rock", "paper", "scissors"];
+ 
+    let inp = prompt("Write Rock Paper or Scissors:").toLowerCase();
+
 
     if (gameSetup.includes(inp)){
     let gameAct = gameSetup[Math.floor(Math.random() * gameSetup.length)];
@@ -27,27 +30,27 @@ for (let i = 0; i < t; i++){
     if (gameAct === inp){
         document.write("Draw")
 		}
-    else if (gameAct == "Rock" && inp == "Paper"){
+    else if (gameAct == "rock" && inp == "paper"){
         document.write("User wins")
         userWins = userWins + 1
 		}
-    else if (gameAct == "Rock" && inp == "Scissors"){
+    else if (gameAct == "rock" && inp == "scissors"){
         document.write("Computer wins")
         compWins = compWins + 1
 		}
-    else if (gameAct == "Paper" && inp == "Rock"){
+    else if (gameAct == "paper" && inp == "rock"){
         document.write("Computer wins")
         compWins = compWins + 1
 		}
-    else if (gameAct == "Paper" && inp == "Scissors"){
+    else if (gameAct == "paper" && inp == "scissors"){
         document.write("User wins")
         compWins = userWins + 1
 		}
-    else if (gameAct == "Scissors" && inp == "Rock"){
+    else if (gameAct == "scissors" && inp == "rock"){
         document.write("User wins")
         userWins = userWins + 1
 		}
-    else if (gameAct == "Scissors" && inp == "Paper"){
+    else if (gameAct == "scissors" && inp == "paper"){
         document.write("Computer wins")
         compWins = compWins + 1
 		}
