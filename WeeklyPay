@@ -1,4 +1,6 @@
 // Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Online Javascript Editor for free
 // Online Javascript Editor for free
 // Code for producing a script developing weekly pay calculations
 // Online Javascript Editor for free
@@ -28,108 +30,146 @@ function calculateYearlyPay(hoursWorked2){
 }
 
 
-function calcTax(taxSum, reStatus) {
+// Online Javascript Editor for free
+// Online Javascript Editor for free
+// Code for producing a script developing weekly pay calculations
+// Online Javascript Editor for free
+// Code for producing a script developing weekly pay calculations
+let pay = " ";
+let reStatus = " ";
+
+function calculateWeeklyPay(hoursWorked1, hoursPay){
     // ParseFloat converts the prompt's string input to a floating point number
-    let taxLevel01 = 0;
-    let taxLevel02 = 0;
-    let taxLevel03 = 0;
-    let taxLevel04 = 0;
-    let taxLevel05 = 0;
-    let taxLevel06 = 0;
-    let taxLevel07 = 0;
-
-        
-if(reStatus == "single" && yearlyPay <= 11,600){
-       taxLevel01 = yearlyPay * 010;
-	
-} else if(reStatus == "single" && yearlyPay <= 47,150){
-       taxLevel02 = (yearlyPay - 11,601) * 0.12;
-       taxLevel01 = 11,600 * 0.10;
-		
-} else if(reStatus == "single" && yearlyPay <= 100,525){
-       taxLevel03 = (yearlyPay - 47,151) * 0.22;
-       taxLevel02 = (47,150 - 11,601) * 0.12;
-       taxLevel01 = 11,600 * 0.10;
-		
-} else if(reStatus == "single" && yearlyPay <= 191,950) {
-	   taxLevel04 = (yearlyPay - 100,526) * 0.24;
-       taxLevel03 = (101,525 - 47,151) * 0.22;
-       taxLevel02 = (47,150 - 11,601) * 0.12;
-       taxLevel01 = 11,600 * 0.10;
-		
-} else if(reStatus == "single" && yearlyPay <= 243,725){
-       taxLevel05 = (yearlyPay - 19,951) * 0.32;
-	   taxLevel04 = (191,950- 100,526) * 0.24;
-       taxLevel03 = (100,525 - 47,151) * 0.22;
-       taxLevel02 = (47,150 - 11,601) * 0.12;
-       taxLevel01 = 11,600 * 0.10;
-		
-} else if(reStatus == "single" && yearlyPay <= 609,350) {
-	   taxLevel06 = (yearlyPay - 243,726) * 0.35;
-       taxLevel05 = (243,725 - 191,951) * 0.32;
-	   taxLevel04 = (191,950 - 100,526) * 0.24;
-       taxLevel03 = (101,525 - 47,151) * 0.22;
-       taxLevel02 = (47,150 - 11,601) * 0.12;
-       taxLevel01 = 11,600 * 0.10;
-		
-} else if(reStatus == "single" && yearlyPay >= 690,351) {
-       taxLevel07 = (yearlyPay - 609,351) * 0.37;
-	   taxLevel06 = (609,350 - 243,726) * 0.35;
-       taxLevel05 = (243,725 - 191,951) * 0.32;
-	   taxLevel04 = (191,950 - 100,526) * 0.24;
-       taxLevel03 = (100,525 - 47,151) * 0.22;
-       taxLevel02 = (47,150 - 11,601) * 0.12;
-       taxLevel01 = 11,600 * 0.10;
-	   
-} else if(reStatus == "married" && yearlyPay <= 23,200){
-       taxLevel01 = yearlyPay * 010;
-		
-} else if(reStatus == "married" && yearlyPay <= 94,300){
-       taxLevel02 = (yearlyPay - 23201) * 0.12;
-       taxLevel01 = 23,200 * 0.10
-		
-} else if(reStatus == "married" && yearlyPay <= 201050){
-       taxLevel03 = (yearlyPay - 94,301) * 0.22;
-       taxLevel02 = (94,300 - 23,201) * 0.12;
-       taxLevel01 = 23,200 * 0.10
-		
-} else if(reStatus == "married" && yearlyPay <= 383900){
-       taxLevel04 = (yearlyPay - 201,051) * 0.24;
-       taxLevel03 = (201,050 - 943,01) * 0.22;
-       taxLevel02 = (94,300 - 23,201) * 0.12;
-       taxLevel01 = 23,200 * 0.10;
-		
-     
-} else if(reStatus == "married" && yearlyPay <= 487,450){
-	   taxLevel05= (yearlyPay - 383,900) * 0.32;
-       taxLevel04 = (383,900 - 201,051) * 0.24;
-       taxLevel03 = (201,050 - 94,301) * 0.22;
-       taxLevel02 = (94,300 - 23,201) * 0.12;
-       taxLevel01 = 23,200 * 0.10;
-		
-	
-
-} else if(reStatus == "married" && yearlyPay <= 731,200){
-	   taxLevel06= (yearlyPay - 487,450) * 0.35;
-	   taxLevel05= (487,451 - 383,901) * 0.32;
-       taxLevel04 = (383,900 - 201,051) * 0.24;
-       taxLevel03 = (201,050 - 94,301) * 0.22;
-       taxLevel02 = (94,300 - 23,201) * 0.12;
-       taxLevel01 = 23,200 * 0.10;
-		
-		
-} else if (reStatus == "married" && yearlyPay >= 731201){
-	   taxLevel07 = (yearlyPay - 731,201) * 0.37;
-	   taxLevel06= (731,200 - 487,451) * 0.35;
-	   taxLevel05= (487,451 - 383,901) * 0.32;
-       taxLevel04 = (383,900 - 201,051) * 0.24;
-       taxLevel03 = (201,050 - 943,01) * 0.22;
-       taxLevel02 = (94,300 - 23,201) * 0.12;
-       taxLevel01 = 23,200 * 0.10;
-		}
+hoursWorked1 = parseFloat(prompt("Enter the number of hours worked in a week:"));
+hoursPay = parseFloat(prompt("Enter the hourly pay:"));
+ 
     // Calculate weekly pay
-      //  let taxSum = taxLevel01 + taxLevel02 + taxLevel03 + taxLevel04 + taxLevel05 + taxLevel06 + taxLevel07;
+let weeklyPay = hoursWorked1 * hoursPay;
+    
+}
+let yearlyPay = parseFloat(prompt("Enter the yearly pay:"));  
+function calculateYearlyPay(hoursWorked2){
+    // ParseFloat converts the prompt's string input to a floating point number
+    hoursWorked2 = parseFloat(prompt("Enter the number of hours worked in a week:"));
+
+    
+    // Calculate weekly pay
+    let hourlyPay2 = yearlyPay / (hoursWorked2 * 52);
+    
+    return hourlyPay2;
+}
+
+
+function calcTax(yearlyPay, reStatus) {
+    let taxLevel01 = 0, taxLevel02 = 0, taxLevel03 = 0, taxLevel04 = 0, taxLevel05 = 0, taxLevel06 = 0, taxLevel07 = 0;
+
+    if (reStatus == "single") {
+        if (yearlyPay <= 11600) {
+            taxLevel01 = yearlyPay * 0.10;
+        } else if (yearlyPay <= 47150) {
+            taxLevel02 = (yearlyPay - 11600) * 0.12;
+            taxLevel01 = 11600 * 0.10;
+        } else if (yearlyPay <= 100525) {
+            taxLevel03 = (yearlyPay - 47150) * 0.22;
+            taxLevel02 = (47150 - 11600) * 0.12;
+            taxLevel01 = 11600 * 0.10;
+        } else if (yearlyPay <= 191950) {
+            taxLevel04 = (yearlyPay - 100525) * 0.24;
+            taxLevel03 = (100525 - 47150) * 0.22;
+            taxLevel02 = (47150 - 11600) * 0.12;
+            taxLevel01 = 11600 * 0.10;
+        } else if (yearlyPay <= 243725) {
+            taxLevel05 = (yearlyPay - 191950) * 0.32;
+            taxLevel04 = (191950 - 100525) * 0.24;
+            taxLevel03 = (100525 - 47150) * 0.22;
+            taxLevel02 = (47150 - 11600) * 0.12;
+            taxLevel01 = 11600 * 0.10;
+        } else if (yearlyPay <= 609350) {
+            taxLevel06 = (yearlyPay - 243725) * 0.35;
+            taxLevel05 = (243725 - 191950) * 0.32;
+            taxLevel04 = (191950 - 100525) * 0.24;
+            taxLevel03 = (100525 - 47150) * 0.22;
+            taxLevel02 = (47150 - 11600) * 0.12;
+            taxLevel01 = 11600 * 0.10;
+        } else {
+            taxLevel07 = (yearlyPay - 609350) * 0.37;
+            taxLevel06 = (609350 - 243725) * 0.35;
+            taxLevel05 = (243725 - 191950) * 0.32;
+            taxLevel04 = (191950 - 100525) * 0.24;
+            taxLevel03 = (100525 - 47150) * 0.22;
+            taxLevel02 = (47150 - 11600) * 0.12;
+            taxLevel01 = 11600 * 0.10;
+        }
+    }
+      if (reStatus == "married") {
+        if (yearlyPay <= 23200) {
+            taxLevel01 = yearlyPay * 0.10;
+        } else if (yearlyPay <= 94300) {
+            taxLevel02 = (yearlyPay - 23200) * 0.12;
+            taxLevel01 = 23200 * 0.10;
+        } else if (yearlyPay <= 100525) {
+            taxLevel03 = (yearlyPay - 94,301) * 0.22;
+            taxLevel02 = (94,300 - 23,201) * 0.12;
+            taxLevel01 = 23,200 * 0.10
+        } else if (yearlyPay <= 201050) {
+            taxLevel04 = (yearlyPay - 201,051) * 0.24;
+            taxLevel03 = (201,050 - 943,01) * 0.22;
+            taxLevel02 = (94,300 - 23,201) * 0.12;
+            taxLevel01 = 23,200 * 0.10;
+        } else if (yearlyPay <= 383900) {
+            taxLevel05= (yearlyPay - 383,900) * 0.32;
+            taxLevel04 = (383,900 - 201,051) * 0.24;
+            taxLevel03 = (201,050 - 94,301) * 0.22;
+            taxLevel02 = (94,300 - 23,201) * 0.12;
+            taxLevel01 = 23,200 * 0.10;
+        } else if (yearlyPay <= 731,200) {
+            taxLevel06= (yearlyPay - 487,450) * 0.35;
+	        taxLevel05= (487,451 - 383,901) * 0.32;
+            taxLevel04 = (383,900 - 201,051) * 0.24;
+            taxLevel03 = (201,050 - 94,301) * 0.22;
+            taxLevel02 = (94,300 - 23,201) * 0.12;
+            taxLevel01 = 23,200 * 0.10;
+        } else {
+           taxLevel07 = (yearlyPay - 731,201) * 0.37;
+	       taxLevel06= (731,200 - 487,451) * 0.35;
+	       taxLevel05= (487,451 - 383,901) * 0.32;
+           taxLevel04 = (383,900 - 201,051) * 0.24;
+           taxLevel03 = (201,050 - 943,01) * 0.22;
+           taxLevel02 = (94,300 - 23,201) * 0.12;
+           taxLevel01 = 23,200 * 0.10;
+        }
+    }
+
+
+    let taxSum = taxLevel01 + taxLevel02 + taxLevel03 + taxLevel04 + taxLevel05 + taxLevel06 + taxLevel07;
     return taxSum;
+}
+
+// Call the function and display the result
+reStatus = prompt("Are you married or single?").toLowerCase();
+pay = prompt("Do you want to calculate weekly or yearly pay?").toLowerCase();
+
+if (pay == "weekly") {
+    let hoursWorked1 = parseFloat(prompt("Enter the number of hours worked in a week:"));
+    let hoursPay = parseFloat(prompt("Enter the hourly pay:"));
+    let weeklyPay = calculateWeeklyPay(hoursWorked1, hoursPay);
+    let yearlyPay = weeklyPay * 52; // Convert weekly pay to yearly pay
+    let tax = calcTax(yearlyPay, reStatus);
+    
+    document.write("Weekly pay is $" + weeklyPay.toFixed(2) + "<br>");
+    document.write("Taxes taken out yearly: $" + tax.toFixed(2) + "<br>");
+    document.write("After-tax weekly pay: $" + ((yearlyPay - tax) / 52).toFixed(2));
+} else if (pay == "yearly") {
+    let yearlyPay = parseFloat(prompt("Enter your yearly salary:"));
+    let hoursWorked2 = parseFloat(prompt("Enter the number of hours worked in a week:"));
+    let hourlyPay = calculateYearlyPay(yearlyPay, hoursWorked2);
+    let tax = calcTax(yearlyPay, reStatus);
+    
+    document.write("Hourly pay is $" + hourlyPay.toFixed(2) + "<br>");
+    document.write("Taxes taken out yearly: $" + tax.toFixed(2) + "<br>");
+    document.write("After-tax yearly pay: $" + (yearlyPay - tax).toFixed(2));
+} else {
+    document.write("Invalid input. Please enter 'weekly' or 'yearly'.");
 }
 
 // Call the function and display the result
